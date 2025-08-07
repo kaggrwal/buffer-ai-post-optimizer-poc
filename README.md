@@ -18,6 +18,6 @@ A full-stack proof-of-concept AI-powered content optimizer using LLM and GraphQL
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/smart-optimizer.git
-cd smart-optimizer
+git clone https://github.com/kaggrwal/buffer-ai-post-optimizer-poc.git
+cd buffer-ai-post-optimizer-poc
 
