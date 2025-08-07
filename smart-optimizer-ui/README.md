@@ -1,36 +1,113 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📌 Buffer-Inspired Smart Post Optimizer (POC)
 
-## Getting Started
+This is a small proof-of-concept project that demonstrates how AI can help creators optimize their social media posts on the fly. It was built as a response to Buffer's job listing and culture, which inspired me to explore how content creation could be made more intuitive and powerful.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- 🔍 Accepts a draft post input
+- 🤖 Uses Hugging face API to analyze and optimize the content
+- 🎯 Returns a polished version with improved clarity, tone, hashtags, etc.
+- 🧪 Fully local development setup (frontend + backend)
+- 🛠️ Built with TypeScript
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Tech |
+|-------|------|
+| Frontend | Next.js (TypeScript) |
+| Backend | Express (TypeScript) |
+| AI Engine | Hugging face llm |
+| Styling | Tailwind CSS |
+| Runtime | Node.js |
+
+---
+
+## 🧪 Getting Started
+
+### 1. Clone the repo
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/kaggrwal/buffer-ai-post-optimizer-poc.git
+cd buffer-ai-post-optimizer-poc
+````
+
+### 2. Install dependencies
+
+```bash
+cd smart-optimizer-ui
+npm install
+
+cd ../smart-optimizer-api
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Setup Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Inside `smart-optimizer-api/`, create a `.env` file:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```env
+HF_TOKEN="Your hugging face token"
+```
 
-## Learn More
+### 4. Run the app
 
-To learn more about Next.js, take a look at the following resources:
+In separate terminals:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Start backend
+cd smart-optimizer-api
+npm run dev
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+# Start frontend
+cd smart-optimizer-ui
+npm run dev
+```
 
-## Deploy on Vercel
+> The UI runs on `http://localhost:3000` by default.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📸 Screenshots
+
+*Coming soon*
+
+---
+
+## 🎯 Why This Project?
+
+Buffer asked:
+
+> “What would you improve about Buffer?”
+
+Here’s one answer:
+Help users write better, faster. A smart assistant that refines tone, grammar, and impact—right when you're crafting the post—can be a game-changer for creators.
+
+This is a basic version, built in a short span, to show the idea in action.
+
+---
+
+## 🙋‍♂️ About Me
+
+I'm Kumar – developer, creative, and product thinker. I've built fintech tools, ecommerce systems, worked on lending infrastructure, high traffic backends, and now exploring ways to build thoughtful user-facing tools.
+
+---
+
+## 📬 Contact
+
+* LinkedIn: [https://www.linkedin.com/in/kumaraggarrwal/](https://www.linkedin.com/in/kumaraggarrwal/)
+* Email: [kaggrwal@gmail.com](mailto:kaggrwal@email.com)
+
+---
+
+> This project is not affiliated with Buffer. It was built out of inspiration for their culture, mission, and openness to new ideas.
+
+```
+
+---
+
